@@ -1,0 +1,26 @@
+# Neovim swap, backup, and undo files
+*.swp
+*.swo
+*.swn
+*.un~
+*~
+*.bak
+
+# Runtime logs
+.nvimlog
+
+# Session files
+Session.vim
+session.vim
+
+# Netrw history
+.netrw*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local coding agent artifacts, logs, or temporary history (if applicable)
+.aider*
+.claude/
+.codex
