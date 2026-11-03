@@ -2,6 +2,11 @@ return {
   "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
+      -- C/C++ Development
+      c = { "clang-format" },
+      cpp = { "clang-format" },
+      cmake = { "cmake_format" },
+      -- JavaScript/TypeScript Development
       javascript = { "biome" },
       javascriptreact = { "biome" },
       typescript = { "biome" },

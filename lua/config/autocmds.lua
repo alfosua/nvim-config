@@ -1,3 +1,12 @@
+-- Disable auto comment formatting in new lines
+vim.api.nvim_create_autocmd("FileType", {
+  desc = "Disable auto comment formatting in new lines",
+  pattern = "*",
+  callback = function()
+    vim.opt_local.formatoptions:remove({ "r", "o" })
+  end
+})
+
 -- Color whitespace characters
 local function set_whitespace_hl()
   vim.api.nvim_set_hl(0, "SpecialKey", { fg = "#383838" })

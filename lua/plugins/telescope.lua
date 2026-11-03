@@ -26,8 +26,8 @@ return {
     end
 
     map('<leader>ff', builtin.find_files, "Find files with Telescope")
-    map('<leader>fg', builtin.find_files, "Live grep with Telescope")
-    map('<leader>fb', builtin.find_files, "Find buffers with Telescope")
-    map('<leader>fh', builtin.find_files, "Find help tags with Telescope")
+    map('<leader>fg', builtin.live_grep, "Live grep with Telescope")
+    map('<leader>fb', builtin.buffers, "Find buffers with Telescope")
+    map('<leader>fh', builtin.help_tags, "Find help tags with Telescope")
   end,
 }
